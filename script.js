@@ -1,6 +1,8 @@
 const resumeLists = document.querySelectorAll('.resume-list');
 const resumeBoxs = document.querySelectorAll('.resume-box');
 
+const portfolioLists = document.querySelectorAll('.portfolio-list');
+
 //navbar action and all section along with cube rotation when navbar is clicked
 
 
@@ -16,6 +18,12 @@ resumeLists.forEach((list, idx) => {
 });
 
 //portfolio section when clicked tab-list
+portfolioLists.forEach((list, idx) => {
+    list.addEventListener('click',()=>{
+        doucument.querySelector('.portfolio-list.active').classList.remove('active');
+        list.classList.add('active');
+    }); 
+});
 
 
 //visibility for contact section whe  reloading (cube reloading animation)
