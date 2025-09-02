@@ -6,6 +6,7 @@ const resumeLists = document.querySelectorAll(".resume-list");
 const resumeBoxs = document.querySelectorAll(".resume-box");
 
 const portfolioLists = document.querySelectorAll(".portfolio-list");
+const portfolioBoxs = document.querySelectorAll(".portfolio-box");
 
 //navbar action and all section along with cube rotation when navbar is clicked
 navs.forEach((nav, idx) => {
